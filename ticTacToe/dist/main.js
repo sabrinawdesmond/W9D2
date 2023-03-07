@@ -25,7 +25,7 @@ eval("const View = __webpack_require__(/*! ./ttt-view */ \"./src/ttt-view.js\")/
   \*************************/
 /***/ ((module) => {
 
-eval("class View {\n  constructor(game, el) {\n    this.game = game;\n    this.el = el; //Node/Element\n    this.setupBoard();\n  }\n\n  setupBoard() {\n    debugger;\n    const ul = document.createElement(\"ul\");\n    for(let x = 0; x < 3; x++) {\n      for(let y = 0; y < 3; y++) {\n        const li = document.createElement(\"li\");\n        li.dataset.pos = JSON.stringify([x,y]);\n        ul.append(li);\n      }\n    }\n    (this.el).append(ul);\n  }\n  \n  bindEvents() {}\n\n  handleClick(e) {}\n\n  makeMove(square) {}\n\n}\n\nmodule.exports = View;\n\n\n//# sourceURL=webpack://tictactoe/./src/ttt-view.js?");
+eval("class View {\n  constructor(game, el) {\n    this.game = game;\n    this.el = el; //Node/Element\n    this.setupBoard();\n  }\n\n  setupBoard() {\n    // debugger;\n    const ul = document.createElement(\"ul\");\n    for(let x = 0; x < 3; x++) {\n      for(let y = 0; y < 3; y++) {\n        const li = document.createElement(\"li\");\n        li.dataset.pos = JSON.stringify([x,y]);\n        ul.append(li);\n      }\n    }\n    (this.el).append(ul);\n  }\n  \n  bindEvents() {}\n\n  handleClick(e) {}\n\n  makeMove(square) {}\n\n}\n\nmodule.exports = View;\n\n\n//# sourceURL=webpack://tictactoe/./src/ttt-view.js?");
 
 /***/ }),
 

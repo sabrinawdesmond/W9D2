@@ -6,7 +6,7 @@ class View {
   }
 
   setupBoard() {
-    debugger;
+    // debugger;
     const ul = document.createElement("ul");
     for(let x = 0; x < 3; x++) {
       for(let y = 0; y < 3; y++) {
